@@ -1,0 +1,178 @@
+*{
+	margin: 0;
+	padding: 0;
+}
+
+#road{
+	background: url(../images/2try.jpg);
+	width: 100%;
+	height: 100vh;
+	overflow: hidden;
+	position: relative;
+	background-repeat: no-repeat;
+	background-size: cover;
+	background-position: center;
+}
+
+#tank{
+	background: url(../images/tank.png);
+	width: 80px;
+	height: 70px;
+	position: absolute;
+	bottom: 1px;
+	left: 48%;
+	background-repeat: no-repeat;
+	background-size: cover;
+	background-position: center;
+}
+
+.start{
+	background: url(../images/back2.jpg);
+	width: 100%;
+	height: 100vh;
+	position: absolute;
+	top: 0;
+	z-index: 999;
+	display: flex;
+	justify-content: center;
+	align-items: center;
+}
+
+#startGame{
+	width: 20%;
+	height: 50px;
+	font-size: 30px;
+	background: red;
+	color: black;
+}
+
+.enemy{
+	background: url(../images/enemy.png);
+	width: 70px;
+	height: 70px;
+	position: absolute;
+	top: 0;
+	background-repeat: no-repeat;
+	background-size: cover;
+	background-position: center;
+	transform: rotate(180deg);
+}
+
+.bullet{
+	background: url(../images/bullet.png);
+	width: 32px;
+	height: 15px;
+	position: absolute;
+	background-repeat: no-repeat;
+	background-size: cover;
+	background-position: center;
+	transform: rotate(270deg);
+}
+
+.bossBullet{
+	background: url(../images/bullet.png);
+	width: 60px;
+	height: 20px;
+	position: absolute;
+	background-repeat: no-repeat;
+	background-size: cover;
+	background-position: center;
+	transform: rotate(90deg);
+}
+
+#points{
+	position: absolute;
+	font-size: 50px;
+	top: 0;
+	right: 30px;
+	color: darkred;
+}
+
+#time{
+	position: absolute;
+	font-size: 50px;
+	top: 0;
+	left: 30px;
+	color: darkblue;
+}
+
+.explosion{
+	background: url(../images/explosion.png);
+	background-repeat: no-repeat;
+	background-size: cover;
+	background-position: center;
+	position: absolute;
+	width: 70px;
+	height: 70px;
+}
+
+.bossExplosion{
+	background: url(../images/explosion.png);
+	background-repeat: no-repeat;
+	background-size: cover;
+	background-position: center;
+	position: absolute;
+	width: 100px;
+	height: 100px;
+}
+
+.warning{
+	background: url(../images/warning.png);
+	background-repeat: no-repeat;
+	background-size: cover;
+	background-position: center;
+	position: absolute;
+	width: 70px;
+	height: 70px;
+}
+
+.boss{
+	background: url(../images/a.png);
+	width: 200px;
+	height: 200px;
+	position: absolute;
+	top: -20px;
+	left: 570px;
+	background-repeat: no-repeat;
+	background-size: cover;
+	background-position: center;
+	transform: rotate(270deg);
+}
+
+#boss{
+	color: red;
+	font-size: 100px;
+	position: absolute;
+	top: 0;
+	left: 32%;
+}
+
+#lifeDiv{
+	position: absolute;
+	width: 100px;
+	height: 2px;
+	border: 1px solid red;
+	bottom: 0px;
+	left: 0px;
+	z-index: 2;
+}
+
+#life{
+	background: red;
+	height: 100%;
+}
+
+#bossLifeDiv{
+	position: absolute;
+	width: 150px;
+	height: 20px;
+	border: 1px solid red;
+	bottom: 0px;
+	right: 0px;
+	z-index: 2;
+}
+
+#bossLife{
+	background: red;
+	height: 100%;
+}
